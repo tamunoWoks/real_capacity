@@ -25,3 +25,6 @@ def calculate_real_capacity():
         # Calculate real capacity
         real_capacity = advertised * (TB_TO_TIB if unit == 'TB' else GB_TO_GIB)
         print(f"The actual capacity is {real_capacity:.2f} {unit}\n")
+
+if __name__ == "__main__":
+    calculate_real_capacity()
