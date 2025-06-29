@@ -14,3 +14,10 @@ def calculate_real_capacity():
         if unit not in ('TB', 'GB'):
             print("Error: Please enter 'TB' or 'GB'.")
             continue
+
+         # Get advertised capacity (with error handling)
+        try:
+            advertised = float(input("Enter the advertised capacity: "))
+        except ValueError:
+            print("Error: Please enter a valid number.")
+            continue
