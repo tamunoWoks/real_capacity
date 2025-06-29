@@ -21,3 +21,7 @@ def calculate_real_capacity():
         except ValueError:
             print("Error: Please enter a valid number.")
             continue
+
+        # Calculate real capacity
+        real_capacity = advertised * (TB_TO_TIB if unit == 'TB' else GB_TO_GIB)
+        print(f"The actual capacity is {real_capacity:.2f} {unit}\n")
