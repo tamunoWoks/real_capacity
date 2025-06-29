@@ -15,3 +15,9 @@ This discrepancy means that a 1 TB drive will show up as ~0.91 TiB in your OS.
 1. Asks the user for the advertised storage unit (TB or GB).
 2. Takes the advertised capacity (e.g., "1" for a 1TB drive).
 3. Calculates and displays the real usable capacity in the same unit, accounting for the difference between decimal and binary measurement.
+
+### Example Output:
+- Input: TB, 1 → Output: "The actual capacity is 0.91 TB"
+- Input: GB, 500 → Output: "The actual capacity is 465.66 GB"
+
+This helps users understand why their drive appears smaller than advertised in their operating system.
